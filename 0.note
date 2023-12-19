@@ -1,0 +1,13 @@
+if you just want the static page the you can do 
+add in config
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',// this will export all our static pages
+images:{unoptimized:true}
+}
+
+module.exports = nextConfig
+
+then npm run build
